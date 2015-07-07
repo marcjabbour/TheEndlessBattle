@@ -13,9 +13,16 @@ var resources = [{
   type: "image",
   src: "player.png"
 },
+  /*{
+    name: "player2",
+    type: "image",
+    src: "player.png"
+
+  },
+  */
 { name: "titleScreen",
   type: "image",
-  src: "titleScreen.png"
+  src: "TheEndlessBattleTitle2.png"
 }, 
 { name: "coin",
   type: "image",

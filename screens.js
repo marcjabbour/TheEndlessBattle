@@ -6,14 +6,14 @@ var PlayScreen = me.ScreenObject.extend({
     me.levelDirector.loadLevel("level1");
     me.input.bindKey(me.input.KEY.LEFT, "left");
     me.input.bindKey(me.input.KEY.RIGHT, "right");
-    document.getElementById('game_state').innerHTML = "Collect all of the coins!";
-    document.getElementById('instructions').innerHTML = "Arrows to move and Space to jump.";
+    document.getElementById('game_state').innerHTML = "Collect the coin!";
+    document.getElementById('instructions').innerHTML = "RIGHT and LEFT arrows to move and UP arrow to jump.";
   }
 });
 var TitleScreen = me.ScreenObject.extend({
   init: function() {
     this.parent(true);
-    me.input.bindKey(me.input.KEY.SPACE, "jump", true);
+    me.input.bindKey(me.input.KEY.UP, "jump", true);
   },
   onResetEvent: function() {
     if (this.title == null) {
@@ -29,6 +29,6 @@ var TitleScreen = me.ScreenObject.extend({
     return true;
   },
   draw: function(context){
-    context.drawImage(this.title, 50, 50);
+    context.drawImage(this.title, 230, 150);
   }
 });
