@@ -9,9 +9,12 @@ var jsApp = {
     me.state.change(me.state.LOADING);
     me.gamestat.add("coins", 0);
     me.gamestat.add("totalCoins", 1);
+    me.gamestat.add("currentLevel", 1);
+    me.gamestat.setValue("currentLevel", 1);
   },
   loaded: function() {
     me.entityPool.add("player", PlayerEntity);
+    me.entityPool.add("player2", PlayerEntity2);
     me.entityPool.add("coin", CoinEntity);
     me.entityPool.add("boots", BootsEntity);
     me.entityPool.add("EnemyEntity", EnemyEntity);
