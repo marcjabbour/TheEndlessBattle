@@ -46,7 +46,7 @@ var PlayerEntity = me.ObjectEntity.extend({
     document.getElementById('game_state').innerHTML = "You Win!";
     document.getElementById('instructions').innerHTML = "";
     if (counter + counter2 != 2){
-      document.getElementById("scoreSouth").innerHTML = "North Korea has " + addForS() + " wins and North Korea has " +counter + " wins";
+      document.getElementById("scoreSouth").innerHTML = "South Korea has " + addForS() + " wins and North Korea has " +counter + " wins";
     }
     else{
       document.getElementById("scoreSouth").innerHTML = "Force is all-conquering, but its victories are short-lived.";
@@ -103,7 +103,7 @@ var PlayerEntity2 = me.ObjectEntity.extend({
     document.getElementById('game_state').innerHTML = "You Win!";
     document.getElementById('instructions').innerHTML = "";
     if (counter + counter2 != 2){
-      document.getElementById("scoreSouth").innerHTML = "North Korea has " + addForS() + " wins and North Korea has " +counter + " wins";
+      document.getElementById("scoreSouth").innerHTML = "South Korea has " + counter2 + " wins and North Korea has " +addForN() + " wins";
     }
     else{
       document.getElementById("scoreSouth").innerHTML = "Force is all-conquering, but its victories are short-lived.";
